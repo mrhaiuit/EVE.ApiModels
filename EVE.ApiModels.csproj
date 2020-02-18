@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5C9C5935-E0CE-4E3B-B30E-B7D27D49A768}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EVE.ApiModels</RootNamespace>
+    <AssemblyName>EVE.ApiModels</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FluentValidation, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7de548da2fbae0f0, processorArchitecture=MSIL">
+      <HintPath>..\..\EVE-Solution\packages\FluentValidation.8.4.0\lib\net45\FluentValidation.dll</HintPath>
+    </Reference>
+    <Reference Include="FluentValidation.ValidatorAttribute, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7de548da2fbae0f0, processorArchitecture=MSIL">
+      <HintPath>..\..\EVE-Solution\packages\FluentValidation.ValidatorAttribute.8.4.0\lib\net45\FluentValidation.ValidatorAttribute.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Authentication\Request\Account\LoginReq.cs" />
+    <Compile Include="Authentication\Response\Account\LogonResponse.cs" />
+    <Compile Include="Catalog\Request\Position\PositionByCodeAndLevelReq.cs" />
+    <Compile Include="Catalog\Request\Position\PositionBaseReq.cs" />
+    <Compile Include="Catalog\Request\District\DistrictBaseReq.cs" />
+    <Compile Include="Catalog\Request\EvalCriteria\GetGuideOfCriteriaReq.cs" />
+    <Compile Include="Catalog\Request\Province\ProvinceBaseReq.cs" />
+    <Compile Include="Catalog\Request\Country\CountryBaseReq.cs" />
+    <Compile Include="Catalog\Request\Ward\WardBaseReq.cs" />
+    <Compile Include="Catalog\Request\Employee\EmployeeBaseReq.cs" />
+    <Compile Include="Catalog\Request\Employee\EmployeeDeleteReq.cs" />
+    <Compile Include="Catalog\Request\Employee\EmployeeGetByIdReq.cs" />
+    <Compile Include="Catalog\Request\Employee\EmployeeInsertReq.cs" />
+    <Compile Include="Catalog\Request\Employee\EmployeeUpdateReq.cs" />
+    <Compile Include="Catalog\Request\EvalState\EvalStateBaseReq.cs" />
+    <Compile Include="Catalog\Request\EvalState\EvalStateDeleteReq.cs" />
+    <Compile Include="Catalog\Request\EvalState\EvalStateGetByIdReq.cs" />
+    <Compile Include="Catalog\Request\EvalState\EvalStateInsertReq.cs" />
+    <Compile Include="Catalog\Request\EvalState\EvalStateUpdateReq.cs" />
+    <Compile Include="Catalog\Request\EvalStandard\EvalStandardBaseReq.cs" />
+    <Compile Include="Catalog\Request\EvalStandard\EvalStandardDeleteReq.cs" />
+    <Compile Include="Catalog\Request\EvalStandard\EvalStandardGetByIdReq.cs" />
+    <Compile Include="Catalog\Request\EvalStandard\EvalStandardInsertReq.cs" />
+    <Compile Include="Catalog\Request\EvalStandard\EvalStandardUpdateReq.cs" />
+    <Compile Include="Catalog\Request\UserGroupForm\UserGroupFormBaseReq.cs" />
+    <Compile Include="Catalog\Request\UserGroupForm\UserGroupFormDeleteReq.cs" />
+    <Compile Include="Catalog\Request\UserGroupForm\UserGroupFormGetByIdReq.cs" />
+    <Compile Include="Catalog\Request\UserGroupForm\UserGroupFormInsertReq.cs" />
+    <Compile Include="Catalog\Request\UserGroupForm\UserGroupFormUpdateReq.cs" />
+    <Compile Include="Catalog\Request\UserGroupEmployee\UserGroupEmployeeBaseReq.cs" />
+    <Compile Include="Catalog\Request\UserGroupEmployee\UserGroupEmployeeDeleteReq.cs" />
+    <Compile Include="Catalog\Request\UserGroupEmployee\UserGroupEmployeeGetByIdReq.cs" />
+    <Compile Include="Catalog\Request\UserGroupEmployee\UserGroupEmployeeInsertReq.cs" />
+    <Compile Include="Catalog\Request\UserGroupEmployee\UserGroupEmployeeUpdateReq.cs" />
+    <Compile Include="Catalog\Request\UserGroup\UserGroupBaseReq.cs" />
+    <Compile Include="Catalog\Request\UserGroup\UserGroupDeleteReq.cs" />
+    <Compile Include="Catalog\Request\UserGroup\UserGroupGetByIdReq.cs" />
+    <Compile Include="Catalog\Request\UserGroup\UserGroupInsertReq.cs" />
+    <Compile Include="Catalog\Request\UserGroup\UserGroupUpdateReq.cs" />
+    <Compile Include="Catalog\Request\SchoolLevel\SchoolLevelBaseReq.cs" />
+    <Compile Include="Catalog\Request\SchoolLevel\SchoolLevelDeleteReq.cs" />
+    <Compile Include="Catalog\Request\SchoolLevel\SchoolLevelGetByIdReq.cs" />
+    <Compile Include="Catalog\Request\SchoolLevel\SchoolLevelInsertReq.cs" />
+    <Compile Include="Catalog\Request\SchoolLevel\SchoolUpdateReq.cs" />
+    <Compile Include="Catalog\Request\School\SchoolBaseReq.cs" />
+    <Compile Include="Catalog\Request\School\SchoolDeleteReq.cs" />
+    <Compile Include="Catalog\Request\School\SchoolGetByIdReq.cs" />
+    <Compile Include="Catalog\Request\School\SchoolInsertReq.cs" />
+    <Compile Include="Catalog\Request\School\SchoolUpdateReq.cs" />
+    <Compile Include="Catalog\Request\LoginUser\LoginUserBaseReq.cs" />
+    <Compile Include="Catalog\Request\LoginUser\LoginUserDeleteReq.cs" />
+    <Compile Include="Catalog\Request\LoginUser\LoginUserGetByIdReq.cs" />
+    <Compile Include="Catalog\Request\LoginUser\LoginUserInsertReq.cs" />
+    <Compile Include="Catalog\Request\LoginUser\LoginUserUpdateReq.cs" />
+    <Compile Include="Catalog\Request\Forms\FormsBaseReq.cs" />
+    <Compile Include="Catalog\Request\Forms\FormsDeleteReq.cs" />
+    <Compile Include="Catalog\Request\Forms\FormsGetByIdReq.cs" />
+    <Compile Include="Catalog\Request\Forms\FormsInsertReq.cs" />
+    <Compile Include="Catalog\Request\Forms\FormsUpdateReq.cs" />
+    <Compile Include="Catalog\Request\EduDepartment\EduDepartmentBaseReq.cs" />
+    <Compile Include="Catalog\Request\EduDepartment\EduDepartmentDeleteReq.cs" />
+    <Compile Include="Catalog\Request\EduDepartment\EduDepartmentGetByIdReq.cs" />
+    <Compile Include="Catalog\Request\EduDepartment\EduDepartmentInsertReq.cs" />
+    <Compile Include="Catalog\Request\EduDepartment\EduDepartmentUpdateReq.cs" />
+    <Compile Include="Catalog\Request\EduProvince\EduProvinceBaseReq.cs" />
+    <Compile Include="Catalog\Request\EduProvince\EduProvinceDeleteReq.cs" />
+    <Compile Include="Catalog\Request\EduProvince\EduProvinceGetByIdReq.cs" />
+    <Compile Include="Catalog\Request\EduProvince\EduProvinceInsertReq.cs" />
+    <Compile Include="Catalog\Request\EduProvince\EduProvinceUpdateReq.cs" />
+    <Compile Include="Catalog\Request\EvalCriteria\EvalCriteriaBaseReq.cs" />
+    <Compile Include="Catalog\Request\EvalCriteria\EvalCriteriaDeleteReq.cs" />
+    <Compile Include="Catalog\Request\EvalCriteria\EvalCriteriaGetByIdReq.cs" />
+    <Compile Include="Catalog\Request\EvalCriteria\EvalCriteriaInsertReq.cs" />
+    <Compile Include="Catalog\Request\EvalCriteria\EvalCriteriaUpdateReq.cs" />
+    <Compile Include="Catalog\Request\EvalDetail\EvalDetailBaseReq.cs" />
+    <Compile Include="Catalog\Request\EvalDetail\EvalDetailDeleteReq.cs" />
+    <Compile Include="Catalog\Request\EvalDetail\EvalDetailGetByIdReq.cs" />
+    <Compile Include="Catalog\Request\EvalDetail\EvalDetailInsertReq.cs" />
+    <Compile Include="Catalog\Request\EvalDetail\EvalDetailUpdateReq.cs" />
+    <Compile Include="Catalog\Request\EvalPeriod\EvalPeriodBaseReq.cs" />
+    <Compile Include="Catalog\Request\EvalPeriod\EvalPeriodDeleteReq.cs" />
+    <Compile Include="Catalog\Request\EvalPeriod\EvalPeriodGetByIdReq.cs" />
+    <Compile Include="Catalog\Request\EvalPeriod\EvalPeriodInsertReq.cs" />
+    <Compile Include="Catalog\Request\EvalPeriod\EvalPeriodUpdateReq.cs" />
+    <Compile Include="Catalog\Request\EvalGuide\EvalGuideBaseReq.cs" />
+    <Compile Include="Catalog\Request\EvalGuide\EvalGuideDeleteReq.cs" />
+    <Compile Include="Catalog\Request\EvalGuide\EvalGuideGetByIdReq.cs" />
+    <Compile Include="Catalog\Request\EvalGuide\EvalGuideInsertReq.cs" />
+    <Compile Include="Catalog\Request\EvalGuide\EvalGuideUpdateReq.cs" />
+    <Compile Include="Catalog\Request\EvalMaster\EvalMasterBaseReq.cs" />
+    <Compile Include="Catalog\Request\EvalMaster\EvalMasterDeleteReq.cs" />
+    <Compile Include="Catalog\Request\EvalMaster\EvalMasterGetByIdReq.cs" />
+    <Compile Include="Catalog\Request\EvalMaster\EvalMasterInsertReq.cs" />
+    <Compile Include="Catalog\Request\EvalMaster\EvalMasterUpdateReq.cs" />
+    <Compile Include="Catalog\Request\EvalResult\EvalResultBaseReq.cs" />
+    <Compile Include="Catalog\Request\EvalResult\EvalResultDeleteReq.cs" />
+    <Compile Include="Catalog\Request\EvalResult\EvalResultGetByIdReq.cs" />
+    <Compile Include="Catalog\Request\EvalResult\EvalResultInsertReq.cs" />
+    <Compile Include="Catalog\Request\EvalResult\EvalResultUpdateReq.cs" />
+    <Compile Include="Catalog\Request\EvalType\EvalTypeBaseReq.cs" />
+    <Compile Include="Catalog\Request\FormGroup\FormGroupBaseReq.cs" />
+    <Compile Include="Catalog\Request\FormGroup\FormGroupDeleteReq.cs" />
+    <Compile Include="Catalog\Request\FormGroup\FormGroupGetByIdReq.cs" />
+    <Compile Include="Catalog\Request\FormGroup\FormGroupInsertReq.cs" />
+    <Compile Include="Catalog\Request\FormGroup\FormGroupUpdateReq.cs" />
+    <Compile Include="Catalog\Response\MenuModule\MenuModuleByUserClassRes.cs" />
+    <Compile Include="Catalog\Response\UserClassMenuItem\GetFormsPermissionByClassRes.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Catalog\Response\MenuGroup\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EVE.WebApi.Shared\EVE.WebApi.Shared.csproj">
+      <Project>{ba7a75ed-1606-4f70-99b0-641d5a322bda}</Project>
+      <Name>EVE.WebApi.Shared</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EVE.Common\EVE.Commons.csproj">
+      <Project>{3b38f3f7-1c80-4009-8d68-7d9e4d3520dc}</Project>
+      <Name>EVE.Commons</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
