@@ -10,7 +10,7 @@ namespace EVE.ApiModels.Catalog
     [Validator(typeof(SchoolInsertValidator))]
     public class SchoolInsertReq : SchoolBaseReq
     {
-        public string School1 { get; set; }
+        public string SchoolName { get; set; }
         public string Address { get; set; }
         public Nullable<int> EduDepartmentId { get; set; }
         public Nullable<int> EduProvinceId { get; set; }
@@ -18,13 +18,14 @@ namespace EVE.ApiModels.Catalog
         public string PhoneNumber { get; set; }
         public string HotLine { get; set; }
         public string MinistryofEducationaCode { get; set; }
+        public Nullable<int> WardId { get; set; }
     }
 
     public class SchoolInsertValidator : AbstractValidator<SchoolInsertReq>
     {
         public SchoolInsertValidator()
         {
-            RuleFor(c => c.SchoolId)
+            RuleFor(c => c.SchoolName)
                     .NotNull()
                     .NotEmpty();
         }
