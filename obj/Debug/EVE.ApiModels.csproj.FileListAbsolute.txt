@@ -1,8 +1,0 @@
-E:\HAI\EVE\Backend\V2\Build\App.Config
-E:\HAI\EVE\Backend\V2\Build\EVE.ApiModels.dll.config
-E:\HAI\EVE\Backend\V2\Build\EVE.ApiModels.dll
-E:\HAI\EVE\Backend\V2\Build\EVE.ApiModels.pdb
-E:\HAI\EVE\Backend\V2\Components\EVE.ApiModels\obj\Debug\EVE.ApiModels.csprojAssemblyReference.cache
-E:\HAI\EVE\Backend\V2\Components\EVE.ApiModels\obj\Debug\EVE.ApiModels.csproj.CopyComplete
-E:\HAI\EVE\Backend\V2\Components\EVE.ApiModels\obj\Debug\EVE.ApiModels.dll
-E:\HAI\EVE\Backend\V2\Components\EVE.ApiModels\obj\Debug\EVE.ApiModels.pdb
