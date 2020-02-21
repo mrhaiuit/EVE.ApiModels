@@ -21,7 +21,17 @@ namespace EVE.ApiModels.Catalog
         {
             RuleFor(c => c.UserGroupCode)
                     .NotNull()
-                    .NotEmpty();
+                    .NotEmpty()
+                    .WithMessage((EnumError.UserGroupCodeIsNullOrEmpty).ToString());
+            RuleFor(c => c.UserGroupName)
+                    .NotNull()
+                    .NotEmpty()
+                    .WithMessage((EnumError.UserGroupNameIsNullOrEmpty).ToString());
+
+            RuleFor(c => c.EduLevelCode)
+                    .NotNull()
+                    .NotEmpty()
+                    .WithMessage((EnumError.EduLevelCodeIsNullOrEmpty).ToString());
         }
 
         public override ValidationResult Validate(ValidationContext<UserGroupInsertReq> context)

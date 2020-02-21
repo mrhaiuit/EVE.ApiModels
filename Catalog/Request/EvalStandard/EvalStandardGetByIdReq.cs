@@ -17,7 +17,8 @@ namespace EVE.ApiModels.Catalog
         {
             RuleFor(c => c.EvalStandardId)
                     .NotNull()
-                    .NotEmpty();
+                    .NotEmpty()
+                    .WithMessage((EnumError.EvalStandardIdIsNullOrEmpty).ToString());
         }
 
     }

@@ -20,10 +20,18 @@ namespace EVE.ApiModels.Catalog
     {
         public EduDepartmentInsertValidator()
         {
-            RuleFor(c => c.Idx)
+            RuleFor(c => c.EduDepartmentName)
                     .NotNull()
                     .NotEmpty()
-                    .WithMessage(((int)EnumError.IsoIsNullOrEmpty).ToString());
+                    .WithMessage(((int)EnumError.EduDepartmentNameIsNullOrEmpty).ToString());
+            RuleFor(c => c.EduDepartmentName)
+                    .NotNull()
+                    .NotEmpty()
+                    .WithMessage(((int)EnumError.EduProvinceIdIsNullOrEmpty).ToString());
+            RuleFor(c => c.DistrictId)
+                    .NotNull()
+                    .NotEmpty()
+                    .WithMessage(((int)EnumError.DistrictIdIsNullOrEmpty).ToString());
         }
     }
 }

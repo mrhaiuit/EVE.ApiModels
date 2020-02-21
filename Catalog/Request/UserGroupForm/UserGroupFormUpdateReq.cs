@@ -14,12 +14,14 @@ namespace EVE.ApiModels.Catalog
     {
         public UserGroupFormUpdateValidator()
         {
-            RuleFor(c => c.UserGroupCode)
-                    .NotNull()
-                    .NotEmpty();
             RuleFor(c => c.FormCode)
                     .NotNull()
-                    .NotEmpty();
+                    .NotEmpty()
+                    .WithMessage((EnumError.FormCodeIsNullOrEmpty).ToString());
+            RuleFor(c => c.UserGroupCode)
+                    .NotNull()
+                    .NotEmpty()
+                    .WithMessage((EnumError.UserGroupCodeIsNullOrEmpty).ToString());
         }
     }
 }

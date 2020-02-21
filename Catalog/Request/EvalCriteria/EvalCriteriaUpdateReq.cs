@@ -14,9 +14,18 @@ namespace EVE.ApiModels.Catalog
     {
         public EvalCriteriaUpdateValidator()
         {
-            RuleFor(c => c.EvalCriteriaId)
+            RuleFor(c => c.EvalStandardId)
                     .NotNull()
-                    .NotEmpty();
+                    .NotEmpty()
+                    .WithMessage(((int)EnumError.EvalStandardIdIsNullOrEmpty).ToString());
+            RuleFor(c => c.EvalCriteriaName)
+                    .NotNull()
+                    .NotEmpty()
+                    .WithMessage(((int)EnumError.EvalCriteriaNameIsNullOrEmpty).ToString());
+            RuleFor(c => c.Idx)
+                    .NotNull()
+                    .NotEmpty()
+                    .WithMessage(((int)EnumError.IdxIsNullOrEmpty).ToString());
         }
     }
 }

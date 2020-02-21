@@ -233,3 +233,4 @@ E:\HAI\EVE\Backend\V2\Components\EVE.ApiModels\obj\Debug\EVE.ApiModels.csprojAss
 E:\HAI\EVE\Backend\V2\Components\EVE.ApiModels\obj\Debug\EVE.ApiModels.csproj.CopyComplete
 E:\HAI\EVE\Backend\V2\Components\EVE.ApiModels\obj\Debug\EVE.ApiModels.dll
 E:\HAI\EVE\Backend\V2\Components\EVE.ApiModels\obj\Debug\EVE.ApiModels.pdb
+E:\HAI\EVE\Backend\V2\Components\EVE.ApiModels\bin\Debug\App.Config

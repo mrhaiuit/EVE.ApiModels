@@ -18,10 +18,12 @@ namespace EVE.ApiModels.Catalog
         {
             RuleFor(c => c.FormCode)
                     .NotNull()
-                    .NotEmpty();
+                    .NotEmpty()            
+                    .WithMessage((EnumError.FormCodeIsNullOrEmpty).ToString());
             RuleFor(c => c.UserGroupCode)
                     .NotNull()
-                    .NotEmpty();
+                    .NotEmpty()
+                    .WithMessage((EnumError.UserGroupCodeIsNullOrEmpty).ToString());
         }
 
         public override ValidationResult Validate(ValidationContext<UserGroupFormInsertReq> context)

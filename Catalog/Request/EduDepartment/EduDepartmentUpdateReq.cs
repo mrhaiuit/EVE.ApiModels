@@ -14,10 +14,18 @@ namespace EVE.ApiModels.Catalog
     {
         public EduDepartmentUpdateValidator()
         {
-            RuleFor(c => c.EduDepartmentId)
+            RuleFor(c => c.EduDepartmentName)
                     .NotNull()
                     .NotEmpty()
-                    .WithMessage(((int)EnumError.IsoIsNullOrEmpty).ToString());
+                    .WithMessage(((int)EnumError.EduDepartmentNameIsNullOrEmpty).ToString());
+            RuleFor(c => c.EduDepartmentName)
+                    .NotNull()
+                    .NotEmpty()
+                    .WithMessage(((int)EnumError.EduProvinceIdIsNullOrEmpty).ToString());
+            RuleFor(c => c.DistrictId)
+                    .NotNull()
+                    .NotEmpty()
+                    .WithMessage(((int)EnumError.DistrictIdIsNullOrEmpty).ToString());
         }
     }
 }

@@ -18,7 +18,8 @@ namespace EVE.ApiModels.Catalog
         {
             RuleFor(c => c.UserGroupCode)
                     .NotNull()
-                    .NotEmpty();
+                    .NotEmpty()
+                    .WithMessage((EnumError.UserGroupCodeIsNullOrEmpty).ToString());
         }
 
     }

@@ -17,7 +17,7 @@ namespace EVE.ApiModels.Catalog
             RuleFor(c => c.EduDepartmentId)
                     .NotNull()
                     .NotEmpty()
-                    .WithMessage(((int)EnumError.IsoIsNullOrEmpty).ToString());
+                    .WithMessage(((int)EnumError.EduDepartmentIdNullOrEmpty).ToString());
         }
     }
 }

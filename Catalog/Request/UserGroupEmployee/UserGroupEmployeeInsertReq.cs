@@ -20,12 +20,14 @@ namespace EVE.ApiModels.Catalog
     {
         public UserGroupEmployeeInsertValidator()
         {
-            RuleFor(c => c.UserGroupCode)
-                    .NotNull()
-                    .NotEmpty();
             RuleFor(c => c.EmployeeId)
                     .NotNull()
-                    .NotEmpty();
+                    .NotEmpty()
+                    .WithMessage((EnumError.EmployeeIdIsNullOrEmpty).ToString());
+            RuleFor(c => c.UserGroupCode)
+                    .NotNull()
+                    .NotEmpty()
+                    .WithMessage((EnumError.UserGroupCodeIsNullOrEmpty).ToString());
         }
 
         public override ValidationResult Validate(ValidationContext<UserGroupEmployeeInsertReq> context)

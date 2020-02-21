@@ -19,9 +19,15 @@ namespace EVE.ApiModels.Catalog
     {
         public EduProvinceInsertValidator()
         {
-            RuleFor(c => c.EduProvinceId)
+            RuleFor(c => c.EduProvinceName)
                     .NotNull()
-                    .NotEmpty();
+                    .NotEmpty()
+                    .WithMessage(((int)EnumError.EduProvinceNameIsNullOrEmpty).ToString());
+
+            RuleFor(c => c.ProvinceId)
+                    .NotNull()
+                    .NotEmpty()
+                    .WithMessage(((int)EnumError.ProvinceIdIsNullOrEmpty).ToString());
         }
     }
 }

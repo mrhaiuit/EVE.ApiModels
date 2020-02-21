@@ -16,11 +16,12 @@ namespace EVE.ApiModels.Catalog
         {
             RuleFor(c => c.EmployeeId)
                     .NotNull()
-                    .NotEmpty();
-
+                    .NotEmpty()
+                    .WithMessage((EnumError.EmployeeIdIsNullOrEmpty).ToString());
             RuleFor(c => c.UserGroupCode)
                     .NotNull()
-                    .NotEmpty();
+                    .NotEmpty()
+                    .WithMessage((EnumError.UserGroupCodeIsNullOrEmpty).ToString());
         }
     }
 }

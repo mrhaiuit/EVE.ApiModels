@@ -20,9 +20,22 @@ namespace EVE.ApiModels.Catalog
     {
         public EvalPeriodInsertValidator()
         {
-            RuleFor(c => c.EvalPeriodId)
+            RuleFor(c => c.PeriodName)
                     .NotNull()
-                    .NotEmpty();
+                    .NotEmpty()
+                  .WithMessage((EnumError.PeriodNameCanNotBeNull).ToString());
+            RuleFor(c => c.Year)
+                    .NotNull()
+                    .NotEmpty()
+                    .WithMessage((EnumError.YearCanNotBeNull).ToString());
+            RuleFor(c => c.FromDate)
+                    .NotNull()
+                    .NotEmpty()
+                    .WithMessage((EnumError.FromDateCanNotBeNull).ToString());
+            RuleFor(c => c.ToDate)
+                    .NotNull()
+                    .NotEmpty()
+                    .WithMessage((EnumError.ToDateCanNotBeNull).ToString());
         }
     }
 }

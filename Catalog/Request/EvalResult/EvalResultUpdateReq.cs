@@ -16,7 +16,12 @@ namespace EVE.ApiModels.Catalog
         {
             RuleFor(c => c.EvalResultCode)
                     .NotNull()
-                    .NotEmpty();
+                    .NotEmpty()
+                    .WithMessage((EnumError.EvalResultCodeIsNullOrEmpty).ToString());
+            RuleFor(c => c.EvalResultName)
+                    .NotNull()
+                    .NotEmpty()
+                    .WithMessage((EnumError.EvalResultNameIsNullOrEmpty).ToString());
         }
     }
 }

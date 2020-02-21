@@ -16,7 +16,7 @@ namespace EVE.ApiModels.Authentication.Request
             RuleFor(c => c.EmployeeId)
                     .NotNull()
                     .NotEmpty()
-                    .WithMessage(((int) EnumError.SiteIdIsNullOrEmpty).ToString());
+                    .WithMessage(((int) EnumError.EmployeeIdIsNullOrEmpty).ToString());
         }
     }
 }

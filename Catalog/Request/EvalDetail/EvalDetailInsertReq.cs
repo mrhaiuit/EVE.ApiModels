@@ -22,9 +22,23 @@ namespace EVE.ApiModels.Catalog
     {
         public EvalDetailInsertValidator()
         {
-            RuleFor(c => c.EvalDetailId)
+            RuleFor(c => c.EvalMasterId)
                     .NotNull()
-                    .NotEmpty();
+                    .NotEmpty()
+                    .WithMessage(((int)EnumError.EvalMasterIsNullOrEmpty).ToString());
+            RuleFor(c => c.EvalCriteriaId)
+                    .NotNull()
+                    .NotEmpty()
+                    .WithMessage(((int)EnumError.EvalCriteriaIsNullOrEmpty).ToString());
+
+            RuleFor(c => c.EmployeeId)
+                    .NotNull()
+                    .NotEmpty()
+                    .WithMessage(((int)EnumError.EmployeeIsNullOrEmpty).ToString());
+            RuleFor(c => c.EvalForEmployee)
+                    .NotNull()
+                    .NotEmpty()
+                    .WithMessage(((int)EnumError.EvalForEmployeeIsNullOrEmpty).ToString());
         }
     }
 }

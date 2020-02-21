@@ -20,9 +20,18 @@ namespace EVE.ApiModels.Catalog
     {
         public EvalStandardInsertValidator()
         {
-            RuleFor(c => c.EvalStandardId)
+            RuleFor(c => c.EvalStandardName)
                     .NotNull()
-                    .NotEmpty();
+                    .NotEmpty()
+                    .WithMessage((EnumError.EvalStandardNameIsNullOrEmpty).ToString());
+            RuleFor(c => c.EvalTypeCode)
+                    .NotNull()
+                    .NotEmpty()
+                    .WithMessage((EnumError.EvalTypeCodeIsNullOrEmpty).ToString());
+            RuleFor(c => c.SchoolLevelCode)
+                    .NotNull()
+                    .NotEmpty()
+                    .WithMessage((EnumError.SchoolLevelCodeIsNullOrEmpty).ToString());
         }
     }
 }

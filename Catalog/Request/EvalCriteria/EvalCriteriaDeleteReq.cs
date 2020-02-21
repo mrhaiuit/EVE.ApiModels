@@ -16,7 +16,8 @@ namespace EVE.ApiModels.Catalog
         {
             RuleFor(c => c.EvalCriteriaId)
                     .NotNull()
-                    .NotEmpty();
+                    .NotEmpty()
+                    .WithMessage(((int)EnumError.EvalCriteriaIdNullOrEmpty).ToString());
         }
     }
 }
