@@ -53,6 +53,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Authentication\Request\Account\GetUserGroupByUserNameReq.cs" />
     <Compile Include="Authentication\Request\Account\LoginReq.cs" />
     <Compile Include="Authentication\Response\Account\LogonResponse.cs" />
     <Compile Include="Catalog\Request\UserGroupEmployeeReq.cs" />
