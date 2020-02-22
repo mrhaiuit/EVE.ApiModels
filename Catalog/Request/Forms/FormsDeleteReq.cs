@@ -6,7 +6,7 @@ using FluentValidation.Attributes;
 namespace EVE.ApiModels.Catalog
 {
     [Validator(typeof(FormsDeleteValidator))]
-    public class FormsDeleteReq : FormsBaseReq
+    public class FormsDeleteReq : GetByUserGroupBaseReq
     {
     }
 

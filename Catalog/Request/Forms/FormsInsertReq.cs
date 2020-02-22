@@ -8,7 +8,7 @@ using FluentValidation.Results;
 namespace EVE.ApiModels.Catalog
 {
     [Validator(typeof(FormsInsertValidator))]
-    public class FormsInsertReq : FormsBaseReq
+    public class FormsInsertReq : GetByUserGroupBaseReq
     {
         public string GroupName { get; set; }
         public Nullable<int> Idx { get; set; }

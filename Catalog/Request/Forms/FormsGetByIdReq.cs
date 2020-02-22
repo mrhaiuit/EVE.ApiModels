@@ -7,7 +7,7 @@ using FluentValidation.Results;
 namespace EVE.ApiModels.Catalog
 {
     [Validator(typeof(FormsGetByIdValidator))]
-    public class FormsGetByIdReq : FormsBaseReq
+    public class FormsGetByIdReq : GetByUserGroupBaseReq
     {
         
     }

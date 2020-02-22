@@ -1,6 +1,6 @@
 ﻿namespace EVE.ApiModels.Catalog
 {
-    public class FormsBaseReq
+    public class GetByUserGroupBaseReq
     {
         public string FormCode { get; set; }
     }
