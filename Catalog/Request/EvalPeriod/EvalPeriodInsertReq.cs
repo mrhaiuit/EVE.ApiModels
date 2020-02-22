@@ -36,6 +36,10 @@ namespace EVE.ApiModels.Catalog
                     .NotNull()
                     .NotEmpty()
                     .WithMessage((EnumError.ToDateCanNotBeNull).ToString());
+            RuleFor(c => c.SchoolId)
+                    .NotNull()
+                    .NotEmpty()
+                  .WithMessage((EnumError.SchoolIsNullOrEmpty).ToString());
         }
     }
 }

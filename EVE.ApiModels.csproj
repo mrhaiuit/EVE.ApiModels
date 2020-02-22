@@ -55,6 +55,8 @@
   <ItemGroup>
     <Compile Include="Authentication\Request\Account\LoginReq.cs" />
     <Compile Include="Authentication\Response\Account\LogonResponse.cs" />
+    <Compile Include="Catalog\Request\UserGroupEmployeeReq.cs" />
+    <Compile Include="Catalog\Request\EvalPeriod\EvalPeriodGetByYearAndSchoolReq.cs" />
     <Compile Include="Catalog\Request\EvalStandard\EvalStandardGetByLevelAndTypeReq.cs" />
     <Compile Include="Catalog\Request\EduLevel\EduLevelBaseReq.cs" />
     <Compile Include="Catalog\Request\Position\PositionByCodeAndLevelReq.cs" />
@@ -160,14 +162,17 @@
     <Compile Include="Catalog\Request\FormGroup\FormGroupGetByIdReq.cs" />
     <Compile Include="Catalog\Request\FormGroup\FormGroupInsertReq.cs" />
     <Compile Include="Catalog\Request\FormGroup\FormGroupUpdateReq.cs" />
-    <Compile Include="Catalog\Response\MenuModule\MenuModuleByUserClassRes.cs" />
+    <Compile Include="Catalog\Response\EvalPeriod\EvalPeriodViewRes.cs" />
+    <Compile Include="Catalog\Response\EvalPeriod\EvalPeriodBaseRes.cs" />
     <Compile Include="Catalog\Response\UserClassMenuItem\GetFormsPermissionByClassRes.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="Catalog\Response\MenuGroup\" />
-  </ItemGroup>
-  <ItemGroup>
+    <ProjectReference Include="..\EVE.Data\EVE.Data.csproj">
+      <Project>{6F4B542A-F584-43D9-A9B3-A703BAB14D24}</Project>
+      <Name>EVE.Data</Name>
+    </ProjectReference>
     <ProjectReference Include="..\EVE.WebApi.Shared\EVE.WebApi.Shared.csproj">
       <Project>{ba7a75ed-1606-4f70-99b0-641d5a322bda}</Project>
       <Name>EVE.WebApi.Shared</Name>
