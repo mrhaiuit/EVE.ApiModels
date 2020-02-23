@@ -11,11 +11,9 @@ namespace EVE.ApiModels.Catalog
     {
         public Nullable<int> EvalMasterId { get; set; }
         public Nullable<int> EvalCriteriaId { get; set; }
-        public Nullable<int> EmployeeId { get; set; }
         public string EvalResultCode { get; set; }
         public string Sample { get; set; }
         public string Attachment { get; set; }
-        public Nullable<int> EvalForEmployee { get; set; }
     }
 
     public class EvalDetailInsertValidator : AbstractValidator<EvalDetailInsertReq>
@@ -30,15 +28,6 @@ namespace EVE.ApiModels.Catalog
                     .NotNull()
                     .NotEmpty()
                     .WithMessage(((int)EnumError.EvalCriteriaIsNullOrEmpty).ToString());
-
-            RuleFor(c => c.EmployeeId)
-                    .NotNull()
-                    .NotEmpty()
-                    .WithMessage(((int)EnumError.EmployeeIsNullOrEmpty).ToString());
-            RuleFor(c => c.EvalForEmployee)
-                    .NotNull()
-                    .NotEmpty()
-                    .WithMessage(((int)EnumError.EvalForEmployeeIsNullOrEmpty).ToString());
         }
     }
 }

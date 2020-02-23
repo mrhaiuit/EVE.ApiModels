@@ -9,14 +9,15 @@ namespace EVE.ApiModels.Catalog
     [Validator(typeof(EvalMasterInsertValidator))]
     public class EvalMasterInsertReq : EvalMasterBaseReq
     {
-        public Nullable<int> Year { get; set; }
-        public string EvalTypeCode { get; set; }
-        public Nullable<int> SchoolId { get; set; }
-        public Nullable<System.DateTime> FromDate { get; set; }
-        public Nullable<System.DateTime> ToDate { get; set; }
         public string Remark { get; set; }
-        public Nullable<bool> Active { get; set; }
         public string EvalStateCode { get; set; }
+        public Nullable<int> EvalPeriodId { get; set; }
+        public Nullable<int> BeEvalEmployeeId { get; set; }
+        public Nullable<int> EvalEmployeeId { get; set; }
+        public Nullable<int> CreateBy { get; set; }
+        public Nullable<System.DateTime> CreateDate { get; set; }
+        public Nullable<int> UpdateBy { get; set; }
+        public Nullable<System.DateTime> UpdateDate { get; set; }
     }
 
     public class EvalMasterInsertValidator : AbstractValidator<EvalMasterInsertReq>

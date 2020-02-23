@@ -8,6 +8,7 @@ namespace EVE.ApiModels.Catalog
     [Validator(typeof(EvalPeriodInsertValidator))]
     public class EvalPeriodInsertReq : EvalPeriodBaseReq
     {
+        public string EvalTypeCode { get; set; }
         public string PeriodName { get; set; }
         public Nullable<int> Year { get; set; }
         public Nullable<System.DateTime> FromDate { get; set; }

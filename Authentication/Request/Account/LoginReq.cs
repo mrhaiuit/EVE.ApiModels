@@ -19,7 +19,7 @@ namespace EVE.ApiModels.Authentication.Request
             RuleFor(c => c.UserName)
                     .NotNull()
                     .NotEmpty()
-                    .WithMessage(((int) EnumError.UsernameIsNullOrEmpty).ToString());
+                    .WithMessage(((int) EnumError.UserNameIsNullOrEmpty).ToString());
             RuleFor(c => c.PassWord)
                     .NotNull()
                     .NotEmpty()
