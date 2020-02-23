@@ -6,7 +6,7 @@ namespace EVE.ApiModels.Catalog
 {
 
     [Validator(typeof(UserGroupEmployeeValidator))]
-    public class UserGroupEmployeeReq : EvalPeriodBaseReq
+    public class UserGroupEmployeeReq 
     {
         public string UserGroupCode { get; set; }
         public int EmpoyeeId { get; set; }

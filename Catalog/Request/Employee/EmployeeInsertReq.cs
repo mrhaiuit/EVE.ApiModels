@@ -24,6 +24,7 @@ namespace EVE.ApiModels.Authentication.Request
         public string PositionCode { get; set; }
         public Nullable<System.DateTime> Birthday { get; set; }
         public Nullable<bool> Sex { get; set; }
+        public string Email { get; set; }
         public Nullable<System.DateTime> CreateDate { get; set; }
         public Nullable<int> CreateBy { get; set; }
     }
