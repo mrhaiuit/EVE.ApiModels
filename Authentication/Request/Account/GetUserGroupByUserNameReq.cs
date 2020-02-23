@@ -5,12 +5,12 @@ using FluentValidation.Attributes;
 namespace EVE.ApiModels.Authentication.Request
 {
     [Validator(typeof(GetUserGroupByUserNameReqValidator))]
-    public class GetUserGroupByUserNameReq
+    public class UserNameReq
     {
         public string UserName { get; set; }
     }
 
-    public class GetUserGroupByUserNameReqValidator : AbstractValidator<GetUserGroupByUserNameReq>
+    public class GetUserGroupByUserNameReqValidator : AbstractValidator<UserNameReq>
     {
         public GetUserGroupByUserNameReqValidator()
         {
