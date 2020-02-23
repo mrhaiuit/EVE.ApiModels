@@ -56,6 +56,11 @@
     <Compile Include="Authentication\Request\Account\GetUserGroupByUserNameReq.cs" />
     <Compile Include="Authentication\Request\Account\LoginReq.cs" />
     <Compile Include="Authentication\Response\Account\LogonResponse.cs" />
+    <Compile Include="Catalog\Request\SchoolDepartment\SchoolDepartmentBaseReq.cs" />
+    <Compile Include="Catalog\Request\SchoolDepartment\SchoolDepartmentDeleteReq.cs" />
+    <Compile Include="Catalog\Request\SchoolDepartment\SchoolDepartmentGetByIdReq.cs" />
+    <Compile Include="Catalog\Request\SchoolDepartment\SchoolDepartmentInsertReq.cs" />
+    <Compile Include="Catalog\Request\SchoolDepartment\SchoolDepartmentUpdateReq.cs" />
     <Compile Include="Catalog\Request\EvalMaster\EvalMasterGetByPeriodAndEmployeeReq.cs" />
     <Compile Include="Catalog\Request\EvalMaster\ExeEvalDetailByMasterIdReq.cs" />
     <Compile Include="Catalog\Request\UserGroupEmployeeReq.cs" />

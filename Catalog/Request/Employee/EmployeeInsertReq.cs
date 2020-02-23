@@ -5,7 +5,7 @@ using System;
 
 namespace EVE.ApiModels.Authentication.Request
 {
-    [Validator(typeof(OperatorInsertValidator))]
+    [Validator(typeof(EmployeeInsertValidator))]
     public class EmployeeInsertReq : EmployeeBaseReq
     {
         public string EmployeeCode { get; set; }
@@ -27,11 +27,12 @@ namespace EVE.ApiModels.Authentication.Request
         public string Email { get; set; }
         public Nullable<System.DateTime> CreateDate { get; set; }
         public Nullable<int> CreateBy { get; set; }
+        public Nullable<int> SchoolDepartmentId { get; set; }
     }
 
-    public class OperatorInsertValidator : AbstractValidator<EmployeeInsertReq>
+    public class EmployeeInsertValidator : AbstractValidator<EmployeeInsertReq>
     {
-        public OperatorInsertValidator()
+        public EmployeeInsertValidator()
         {
             RuleFor(c => c.EmployeeName)
                     .NotNull()

@@ -5,14 +5,14 @@ using FluentValidation.Attributes;
 
 namespace EVE.ApiModels.Authentication.Request
 {
-    [Validator(typeof(OperatorDeleteValidator))]
+    [Validator(typeof(EmployeeDeleteValidator))]
     public class EmployeeDeleteReq : EmployeeBaseReq
     {
     }
 
-    public class OperatorDeleteValidator : AbstractValidator<EmployeeBaseReq>
+    public class EmployeeDeleteValidator : AbstractValidator<EmployeeBaseReq>
     {
-        public OperatorDeleteValidator()
+        public EmployeeDeleteValidator()
         {
             RuleFor(c => c.EmployeeId)
                     .NotNull()

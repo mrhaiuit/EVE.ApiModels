@@ -4,14 +4,14 @@ using FluentValidation.Attributes;
 
 namespace EVE.ApiModels.Authentication.Request
 {
-    [Validator(typeof(OperatorGetByIdValidator))]
+    [Validator(typeof(EmployeeGetByIdValidator))]
     public class EmployeeGetByIdReq : EmployeeBaseReq
     {
     }
 
-    public class OperatorGetByIdValidator : AbstractValidator<EmployeeGetByIdReq>
+    public class EmployeeGetByIdValidator : AbstractValidator<EmployeeGetByIdReq>
     {
-        public OperatorGetByIdValidator()
+        public EmployeeGetByIdValidator()
         {
             RuleFor(c => c.EmployeeId)
                     .NotNull()
