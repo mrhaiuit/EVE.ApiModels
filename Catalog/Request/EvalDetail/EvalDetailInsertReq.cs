@@ -9,8 +9,10 @@ namespace EVE.ApiModels.Catalog
     [Validator(typeof(EvalDetailInsertValidator))]
     public class EvalDetailInsertReq : EvalDetailBaseReq
     {
-        public Nullable<int> EvalMasterId { get; set; }
-        public Nullable<int> EvalCriteriaId { get; set; }
+        public int EvalMasterId { get; set; }
+        public string EvalStandardName { get; set; }
+        public int EvalCriteriaId { get; set; }
+        public string EvalCriteriaName { get; set; }
         public string EvalResultCode { get; set; }
         public string Sample { get; set; }
         public string Attachment { get; set; }
