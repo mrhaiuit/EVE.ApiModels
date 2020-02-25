@@ -170,6 +170,7 @@
     <Compile Include="Catalog\Request\FormGroup\FormGroupGetByIdReq.cs" />
     <Compile Include="Catalog\Request\FormGroup\FormGroupInsertReq.cs" />
     <Compile Include="Catalog\Request\FormGroup\FormGroupUpdateReq.cs" />
+    <Compile Include="Catalog\Response\EvalMaster\EvalResultSumaryRes.cs" />
     <Compile Include="Catalog\Response\EvalPeriod\EvalPeriodViewRes.cs" />
     <Compile Include="Catalog\Response\EvalPeriod\EvalPeriodBaseRes.cs" />
     <Compile Include="Catalog\Response\UserClassMenuItem\GetFormsPermissionByClassRes.cs" />
