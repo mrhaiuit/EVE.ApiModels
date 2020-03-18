@@ -28,6 +28,7 @@ namespace EVE.ApiModels.Authentication.Request
         public Nullable<System.DateTime> CreateDate { get; set; }
         public Nullable<int> CreateBy { get; set; }
         public Nullable<int> SchoolDepartmentId { get; set; }
+        public string UserGroupCode { get; set; }
     }
 
     public class EmployeeInsertValidator : AbstractValidator<EmployeeInsertReq>
@@ -54,7 +55,11 @@ namespace EVE.ApiModels.Authentication.Request
             RuleFor(c => c.EduLevelCode)
                     .NotNull()
                     .NotEmpty()
-                    .WithMessage(((int)EnumError.EduLevelCodeIsNullOrEmpty).ToString());            
+                    .WithMessage(((int)EnumError.EduLevelCodeIsNullOrEmpty).ToString());
+            RuleFor(c => c.UserGroupCode)
+                    .NotNull()
+                    .NotEmpty()
+                    .WithMessage(((int)EnumError.UserGroupCodeIsNullOrEmpty).ToString());
         }
     }
 }
