@@ -59,6 +59,7 @@
     <Compile Include="Catalog\Request\EvalDetail\EvalDetailByYearAndUserReq.cs" />
     <Compile Include="Catalog\Request\Report\BM4Req.cs" />
     <Compile Include="Catalog\Request\Report\BM2Req.cs" />
+    <Compile Include="Catalog\Request\BoolBaseReq.cs" />
     <Compile Include="Catalog\Request\SchoolDepartment\SchoolDepartmentBaseReq.cs" />
     <Compile Include="Catalog\Request\SchoolDepartment\SchoolDepartmentDeleteReq.cs" />
     <Compile Include="Catalog\Request\SchoolDepartment\SchoolDepartmentGetByIdReq.cs" />

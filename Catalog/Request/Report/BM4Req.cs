@@ -8,7 +8,7 @@ namespace EVE.ApiModels.Catalog
     public class BM4Req 
     {
         public int PeriodId { get; set; }
-        public int EmployeeId { get; set; }
+        public int SchoolId { get; set; }
 
     }
 
@@ -20,10 +20,10 @@ namespace EVE.ApiModels.Catalog
                     .NotNull()
                     .NotEmpty()
                     .WithMessage(((int)EnumError.PeriodIdIsNullOrEmpty).ToString());
-            RuleFor(c => c.EmployeeId)
+            RuleFor(c => c.SchoolId)
                     .NotNull()
                     .NotEmpty()
-                    .WithMessage(((int)EnumError.EmployeeIdIsNullOrEmpty).ToString());
+                    .WithMessage(((int)EnumError.SchoolIdIsNullOrEmpty).ToString());
         }
     }
 }
