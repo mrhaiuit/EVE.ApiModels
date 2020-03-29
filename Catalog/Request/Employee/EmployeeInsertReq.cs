@@ -29,6 +29,7 @@ namespace EVE.ApiModels.Authentication.Request
         public Nullable<int> CreateBy { get; set; }
         public Nullable<int> SchoolDepartmentId { get; set; }
         public string UserGroupCode { get; set; }
+        public string Class { get; set; }
     }
 
     public class EmployeeInsertValidator : AbstractValidator<EmployeeInsertReq>
