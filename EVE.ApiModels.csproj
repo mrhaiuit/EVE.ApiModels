@@ -57,6 +57,7 @@
     <Compile Include="Authentication\Request\Account\LoginReq.cs" />
     <Compile Include="Authentication\Response\Account\LogonResponse.cs" />
     <Compile Include="Catalog\Request\EvalDetail\EvalDetailByYearAndUserReq.cs" />
+    <Compile Include="Catalog\Request\EvalMaster\EvalMasterGetByUserIdReq.cs" />
     <Compile Include="Catalog\Request\Report\BM4Req.cs" />
     <Compile Include="Catalog\Request\Report\BM2Req.cs" />
     <Compile Include="Catalog\Request\BoolBaseReq.cs" />
