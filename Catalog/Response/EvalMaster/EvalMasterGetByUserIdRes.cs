@@ -14,7 +14,7 @@ namespace EVE.ApiModels.Catalog.Response
         public DateTime? FromDate { get; set; }
         public DateTime? ToDate { get; set; }
         public bool? Approveed { get; set; }
-        public int TotalEval { get; set; } = 0;
+        public int? TotalEval { get; set; } = 0;
         public string Class { get; set; }
     }
 }
