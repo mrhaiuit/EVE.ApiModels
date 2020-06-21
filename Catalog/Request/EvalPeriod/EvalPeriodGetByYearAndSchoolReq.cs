@@ -10,7 +10,7 @@ namespace EVE.ApiModels.Catalog
     {
         public int SchoolId { get; set; }
         public int Year { get; set; }
-        public string EvalTypeCode { get; set; }
+        public string EvalTypeCode { get; set; } = EnumEvalType.Teacher;
     }
 
     public class EvalPeriodGetByYearAndSchoolValidator : AbstractValidator<EvalPeriodGetByYearAndSchoolReq>
@@ -26,7 +26,7 @@ namespace EVE.ApiModels.Catalog
                     .NotEmpty()
                     .WithMessage((EnumError.YearIsNullOrEmpty).ToString());
 
-            RuleFor(c => c.Year)
+            RuleFor(c => c.EvalTypeCode)
                     .NotNull()
                     .NotEmpty()
                     .WithMessage((EnumError.EvalTypeCodeIsNullOrEmpty).ToString());
