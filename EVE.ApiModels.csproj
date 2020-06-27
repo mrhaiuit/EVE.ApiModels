@@ -188,6 +188,7 @@
     <Compile Include="Catalog\Response\EvalPeriod\EvalPeriodViewRes.cs" />
     <Compile Include="Catalog\Response\EvalPeriod\EvalPeriodBaseRes.cs" />
     <Compile Include="Catalog\Response\EvalDetail\EvalDetailByYearAndUserRes.cs" />
+    <Compile Include="Catalog\Response\SubPrincipalCriteria\SubPrincipalEmployeeAndPeriodRes.cs" />
     <Compile Include="Catalog\Response\UserClassMenuItem\GetFormsPermissionByClassRes.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
