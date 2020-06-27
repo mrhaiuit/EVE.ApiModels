@@ -16,6 +16,7 @@ namespace EVE.ApiModels.Catalog
         public string EvalResultCode { get; set; }
         public string Sample { get; set; }
         public string Attachment { get; set; }
+        public string EvalResultPrincipal { get; set; }
     }
 
     public class EvalDetailInsertValidator : AbstractValidator<EvalDetailInsertReq>
