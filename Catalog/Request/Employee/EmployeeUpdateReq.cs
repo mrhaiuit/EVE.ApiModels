@@ -14,9 +14,9 @@ namespace EVE.ApiModels.Authentication.Request
         public EmployeeUpdateValidator()
         {
             RuleFor(c => c.EmployeeName)
-                       .NotNull()
-                       .NotEmpty()
-                       .WithMessage(((int)EnumError.EmployeeNameIsNullOrEmpty).ToString());
+                    .NotNull()
+                    .NotEmpty()
+                    .WithMessage(((int)EnumError.EmployeeNameIsNullOrEmpty).ToString());
             RuleFor(c => c.UserName)
                     .NotNull()
                     .NotEmpty()
@@ -25,14 +25,14 @@ namespace EVE.ApiModels.Authentication.Request
                     .NotNull()
                     .NotEmpty()
                     .WithMessage(((int)EnumError.PasswordIsNullOrEmpty).ToString());
-            RuleFor(c => c.EmployeeName)
-                    .NotNull()
-                    .NotEmpty()
-                    .WithMessage(((int)EnumError.PasswordIsNullOrEmpty).ToString());
             RuleFor(c => c.EduLevelCode)
                     .NotNull()
                     .NotEmpty()
                     .WithMessage(((int)EnumError.EduLevelCodeIsNullOrEmpty).ToString());
+            RuleFor(c => c.UserGroupCode)
+                    .NotNull()
+                    .NotEmpty()
+                    .WithMessage(((int)EnumError.UserGroupCodeIsNullOrEmpty).ToString());
         }
     }
 }

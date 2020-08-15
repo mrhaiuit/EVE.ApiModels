@@ -48,11 +48,6 @@ namespace EVE.ApiModels.Authentication.Request
                     .NotNull()
                     .NotEmpty()
                     .WithMessage(((int)EnumError.PasswordIsNullOrEmpty).ToString());
-
-            RuleFor(c => c.EmployeeName)
-                    .NotNull()
-                    .NotEmpty()
-                    .WithMessage(((int)EnumError.PasswordIsNullOrEmpty).ToString());
             RuleFor(c => c.EduLevelCode)
                     .NotNull()
                     .NotEmpty()

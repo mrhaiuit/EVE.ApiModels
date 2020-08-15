@@ -56,9 +56,11 @@
     <Compile Include="Authentication\Request\Account\GetUserGroupByUserNameReq.cs" />
     <Compile Include="Authentication\Request\Account\LoginReq.cs" />
     <Compile Include="Authentication\Response\Account\LogonResponse.cs" />
+    <Compile Include="Catalog\Request\EduDepartment\EduDepartmentSearchByName.cs" />
     <Compile Include="Catalog\Request\EvalCriteria\GetByEvalTypeSchoolLevelReq.cs" />
     <Compile Include="Catalog\Request\EvalDetail\EvalDetailByYearAndUserReq.cs" />
     <Compile Include="Catalog\Request\EvalMaster\EvalMasterGetByUserIdReq.cs" />
+    <Compile Include="Catalog\Request\EvalPeriod\EvalPeriodBySchoolYearTypeReq.cs" />
     <Compile Include="Catalog\Request\EvalPeriod\EvalPeriodByUserGroupAndTypeReq.cs" />
     <Compile Include="Catalog\Request\Report\BM4Req.cs" />
     <Compile Include="Catalog\Request\Report\BM2Req.cs" />
@@ -70,6 +72,7 @@
     <Compile Include="Catalog\Request\SchoolDepartment\SchoolDepartmentUpdateReq.cs" />
     <Compile Include="Catalog\Request\EvalMaster\EvalMasterGetByPeriodAndEmployeeReq.cs" />
     <Compile Include="Catalog\Request\EvalMaster\ExeEvalDetailByMasterIdReq.cs" />
+    <Compile Include="Catalog\Request\School\SchoolSearchByName.cs" />
     <Compile Include="Catalog\Request\SubPrincipalCriteria\GetByEmployeeAndPeriodReq.cs" />
     <Compile Include="Catalog\Request\SubPrincipalCriteria\SubPrincipalCriteriaDeleteReq.cs" />
     <Compile Include="Catalog\Request\SubPrincipalCriteria\SubPrincipalCriteriaInsertReq.cs" />
